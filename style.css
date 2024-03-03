@@ -9,12 +9,19 @@
 }
 :root {
     font-size: 62.5%;
+
+    --bg-color: #1A1924;
+    --bg-message-you-color: #07847E;
+    --bg-message-person-color: #633BBC;
+    --bg-send-message-color: #282843;
+    --text-color: #E1E1E6;
+    --online-color: #00B37E;
 }
 body { 
     font-family: 'Roboto', sans-serif;
 
-    background-color: #1A1924;
-    color: #E1E1E6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 
     display: flex;
     justify-content: center;
@@ -34,7 +41,7 @@ section {
     padding: 3.2rem 0 2rem;
     z-index: 2;
 
-    background-color: #1A1924;
+    background-color: var(--bg-color);
 
     display: flex;
     align-items: center;
@@ -70,12 +77,12 @@ section {
     width: .8rem;
     height: .8rem;
     border-radius: 50%;
-    background-color: #00B37E;
+    background-color: var(--online-color);
 }
 .profile-info .name-status .status .text {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #00B37E;
+    color: var(--online-color);
 }
 .profile svg {
     cursor: pointer;
@@ -108,14 +115,14 @@ section {
     text-align: right;
 }
 .message.you .text {
-    background-color: #07847E;
+    background-color: var(--bg-message-you-color);
     border-bottom-right-radius: 0;
 }
 .message.person {
     text-align: left;
 }
 .message.person .text {
-    background-color: #633BBC;
+    background-color: var(--bg-message-person-color);
     border-top-left-radius: 0;
 }
 .scroll-adjust {
@@ -129,7 +136,7 @@ section {
     bottom: 0;
     padding: 2.4rem 0 3.2rem;
 
-    background-color: #1A1924;
+    background-color: var(--bg-color);
 }
 .send-message-div {
     width: 100%;
@@ -138,7 +145,7 @@ section {
     padding: 1.4rem 2.4rem;
 
     border-radius: 999px;
-    background-color: #282843;
+    background-color: var(--bg-send-message-color);
 }
 .send-message-form {
     height: 100%;
@@ -156,7 +163,7 @@ section {
     border: none;
     outline: none;
 
-    color: #E1E1E6;
+    color: var(--text-color);
 }
 .send-message:focus {
     border: none;
